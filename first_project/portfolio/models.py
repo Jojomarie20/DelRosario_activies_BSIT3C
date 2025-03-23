@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Users(models.Model):
+class News(models.Model):
     title = models.CharField(max_length=200)
     body = models.TextField()
     slug = models.SlugField()
