@@ -27,5 +27,8 @@ urlpatterns = [
     ])),
     path('api/', include([
         path('items/', include('items.urls', namespace='items'))
-    ]))
+    ])),
+    path('api/v2/', include([
+        path('auth/', include(('users.urls', 'auth'))),
+    ])),
 ]
